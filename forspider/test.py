@@ -18,6 +18,7 @@ regex = r'src="(.*?\.jpg)"'
 pat = re.compile(regex)
 urls = re.findall(pat, html)
 
+#若目录不存在则新建该文件夹
 if not os.path.isdir(dirpath):
     os.mkdir(dirpath)
 
